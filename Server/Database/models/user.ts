@@ -4,9 +4,9 @@ import IUser from '../interfaces/user';
 
 const UserSchema : Schema = new Schema(
     {
+        //needs to be completed with more info
         user : {type:String,required:true},
         password : {type:String,required:true},
-       // extraInfo : {type:String}
     },
     {
         timestamps : true
