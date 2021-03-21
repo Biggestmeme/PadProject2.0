@@ -9,17 +9,17 @@ const NAMESPACE = 'Server';
 const router = express();
 
 mongoose.connect(config.mongo_connection_details.url,config.mongo_options)
-    .then(result => {
+    .then((result:any) => {
         console.log('CONNECTED TO MONGO')
     })
-    .catch(error => {
+    .catch((error:any) => {
         console.log('ERROR CONNECTION TO MONGO');
     });
 
 
 
 
-router.get('/',(req,res) => {
+router.get('/',(req:any,res:any) => {
     res.send("Hello");
 })
 
