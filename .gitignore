@@ -1,0 +1,12 @@
+#node packages
+node_modules/
+
+
+#compiles js
+*.js
+!package.json
+!package-lock.json
+
+#env
+.env
+

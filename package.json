@@ -1,0 +1,19 @@
+{
+  "name": "padproject_2.0",
+  "version": "1.0.0",
+  "description": "No Description For Now",
+  "main": "index.js",
+  "dependencies": {
+     "typescript": "^4.2.3"
+    },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
