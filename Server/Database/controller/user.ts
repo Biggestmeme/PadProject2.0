@@ -18,21 +18,37 @@ const getAllUsers = (req:any,res:any) => {
             });
         })
 }
-const getUsers = (req:any,res:any) => {
+const getUser = (req:any,res:any) => {
     //to do in-to the future add find by email
     User.findOne(req.query)
         .exec()
         .then((result:any) => {
-            console.log(req.query);
-            console.log(result);
             res.send(result);
         })
         .catch((error:any) => {
             res.send([]);
         })
 }
-const createUser = (req:any,res:any) => {}
+const createUser = (req:any,res:any) => {
+    let newUser = new User(req.query);
+    newUser.save()
+        .then(
+            res.send(newUser)
+        )
+        .catch((error:any) => {
+            res.send([]);
+        })
+}
 const deleteUser = (req:any,res:any) => {}
-const updateUser = (req:any,res:any) => {}
 
-export default { getAllUsers,getUsers,createUser,deleteUser,updateUser };
+const updateUser = (req:any,res:any) => {
+    User.updateOne({username:req.query.username},req.query)
+        .then((result:any) => {
+            getUser(req,res);
+        })
+        .catch((error:any) => {
+            res.send([]);
+        })
+}
+
+export default { getAllUsers,getUser,createUser,deleteUser,updateUser };
