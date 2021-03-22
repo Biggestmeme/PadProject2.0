@@ -21,7 +21,7 @@ Every server starts separately.
 Using commands from root package.json :
 ## For Database
 ```bash
-npm run database
+npm run start:database
 ```
 
 

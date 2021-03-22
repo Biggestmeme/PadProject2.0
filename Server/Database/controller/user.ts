@@ -18,9 +18,21 @@ const getAllUsers = (req:any,res:any) => {
             });
         })
 }
-const getUsers = (req:IUser,res:any) => {}
+const getUsers = (req:any,res:any) => {
+    //to do in-to the future add find by email
+    User.findOne(req.query)
+        .exec()
+        .then((result:any) => {
+            console.log(req.query);
+            console.log(result);
+            res.send(result);
+        })
+        .catch((error:any) => {
+            res.send([]);
+        })
+}
 const createUser = (req:any,res:any) => {}
 const deleteUser = (req:any,res:any) => {}
 const updateUser = (req:any,res:any) => {}
 
-export default { getAllUsers,createUser,deleteUser,updateUser };
+export default { getAllUsers,getUsers,createUser,deleteUser,updateUser };
