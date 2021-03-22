@@ -6,7 +6,7 @@ const MONGO_HOSTNAME = process.env.MONGO_HOSTNAME || 'localhost';
 const MONGO_PORT = process.env.MONGO_PORT || 27017;
 const MONGO_USER = process.env.MONGO_USER || null;
 const MONGO_PASSWORD = process.env.MONGO_PASSWORD || null;
-const MONGO_URL = process.env.MOGNO_URL ||  'mongodb://' + MONGO_HOSTNAME +':'+MONGO_PORT
+const MONGO_URL = process.env.MOGNO_URL ||  'mongodb://' + MONGO_HOSTNAME +':'+MONGO_PORT+"/AuctionSite"
 const SERVER_PORT = process.env.SERVER_PORT || 31337;
 
 const MONGO_OPTIONS = {

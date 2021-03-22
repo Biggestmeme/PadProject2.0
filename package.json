@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "installPackages": "npm i && cd Server/Database && npm i",
     "build" : "npx tsc",
-    "run-database": "cd ./Output/Server/Database && node server.js"
+    "start:database": "cd ./Output/Server/Database && node server.js"
   },
   "author": "",
   "license": "ISC"

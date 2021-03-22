@@ -4,15 +4,14 @@ This project is made specially for a uni project
 
 # Installation
 
-Use the package manager [npm](https://nodejs.org/en/) to install project.
+Use the package manager [npm](https://nodejs.org/en/) to install the project.
+It also needs [mongodb](https://www.mongodb.com/) to work
 
 in root directory
 ```bash
 npm run installPackages
 npm run build
 ```
-
-It also needs [mongodb](https://www.mongodb.com/) to work
 
 
 # Usage
