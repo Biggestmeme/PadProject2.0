@@ -6,6 +6,13 @@ import bodyParser from 'body-parser';
 import http from 'http';
 import User from "./models/user";
 
+
+/*
+WARNING : need to add AUTH for the DB API
+
+
+*/
+
 const NAMESPACE = 'Server';
 const router = express();
 

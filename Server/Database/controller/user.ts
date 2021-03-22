@@ -23,6 +23,8 @@ const getUser = (req:any,res:any) => {
     User.findOne(req.query)
         .exec()
         .then((result:any) => {
+            console.log(result);
+
             res.send(result);
         })
         .catch((error:any) => {
