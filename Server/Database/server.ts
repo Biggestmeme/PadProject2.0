@@ -2,9 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import config from './config/config';
 import UserRoutes from './routes/user';
-import bodyParser from 'body-parser';
 import http from 'http';
-import User from "./models/user";
 
 
 /*

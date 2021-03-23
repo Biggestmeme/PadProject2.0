@@ -24,6 +24,11 @@ Using commands from root package.json :
 npm run start:database
 ```
 
+## For Login
+```bash
+npm run start:login
+```
+
 
 Please make sure to verify the changes before commit
 ## License

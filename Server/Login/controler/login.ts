@@ -1,6 +1,7 @@
 import config from '../config/config';
 import request from 'request';
 
+//this function retreives all the data about a specific user
 const getUserData = async (req:any,res:any) => {
     let baseUrl = config.database.url+config.database.api_routes.getUser;
     let queryString = "?username="+req.query.username+"&password="+req.query.password;
