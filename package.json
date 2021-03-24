@@ -19,7 +19,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installPackages": "npm i && cd Server/Database && npm i",
+    "installServerPackages": "npm i && cd Server/Database && npm i && cd ../Login && npm i",
+    "installClientPackages" : "cd Client && npm i",
+    "installPackages" : "npm run installServerPackages && npm run installClientPackages",
     "build": "npx tsc",
     "start:database": "cd ./Output/Server/Database && node server.js",
     "start:login" : "cd ./Output/Server/Login && node server.js",

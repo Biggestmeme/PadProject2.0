@@ -1,0 +1,6 @@
+What happend : 
+	Using a simple brutforce can break the server from too many requests. 
+	The unauthorized user can gain the api_auth_key.
+
+Solution : 
+	TO-DO
